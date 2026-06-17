@@ -22,7 +22,7 @@ Window:AddMinimizeButton({
 
 local AntiAfkTab = Window:MakeTab({"Anti AFK", "activity"})
 
-local afkEnabled = true
+local afkEnabled = false
 local afkInterval = 60
 local moveEnabled = false
 local clickEnabled = false
@@ -38,7 +38,7 @@ AntiAfkTab:AddSection({"Anti AFK Settings"})
 AntiAfkTab:AddToggle({
     Name = "Enable Anti AFK",
     Description = "Prevents kick for inactivity using the three methods provided",
-    Default = false,
+    Default = true,
     Callback = function(Value)
         afkEnabled = Value
 
