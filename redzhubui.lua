@@ -1581,12 +1581,12 @@ function redzlib:MakeWindow(Configs)
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
-			Text = "You Want Close Ui?",
+			Text = "Are you sure you want to close this UI?",
 			Options = {
-				{"Confirm", function()
+				{"Yes", function()
 					ScreenGui:Destroy()
 				end},
-				{"Cancel"}
+				{"No"}
 			}
 		})
 	end
