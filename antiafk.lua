@@ -1,4 +1,4 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Star-dos-scripts/Redzhubui/refs/heads/main/Redzhubui.lua"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hihihihihiiray/anti-afk/refs/heads/main/redzhubui.lua"))()
 local VirtualUser = game:GetService("VirtualUser")
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
