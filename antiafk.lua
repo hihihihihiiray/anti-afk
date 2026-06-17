@@ -22,7 +22,7 @@ Window:AddMinimizeButton({
 
 local AntiAfkTab = Window:MakeTab({"Anti AFK", "activity"})
 
-local afkEnabled = false
+local afkEnabled = true
 local afkInterval = 60
 local moveEnabled = false
 local clickEnabled = false
@@ -92,7 +92,7 @@ AntiAfkTab:AddSlider({
     Min = 5,
     Max = 1800,
     Increase = 5,
-    Default = 60,
+    Default = 5,
     Callback = function(Value)
         afkInterval = Value
     end
